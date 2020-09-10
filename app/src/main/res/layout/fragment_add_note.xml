@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddNoteFragment">
+
+
+    <EditText
+
+        android:id="@+id/editText_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_title_24"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textCapWords"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText_inputNote"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText_title"
+        android:layout_margin="15dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_note_24"
+        android:ems="10"
+        android:hint="Input note"
+        android:inputType="textCapWords"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="14sp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_saveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_done_24" />
+
+</RelativeLayout>
